@@ -1,7 +1,13 @@
-# performs basic arithmetic operations with two predefined numbers
-number1=3
-number2=4
-print(number1+number2)
-print(number2-number1)
-print(number1*number2)
-print(number1/number2)
+# Define variables
+number1 = 10
+number2 = 5
+
+# Calculate operations
+sum_result = number1 + number2
+difference_result = number1 - number2
+product_result = number1 * number2
+
+# Print results
+print(f"Sum of {number1} and {number2} is {sum_result}")
+print(f"Difference of {number1} and {number2} is {difference_result}")
+print(f"Product of {number1} and {number2} is {product_result}")
