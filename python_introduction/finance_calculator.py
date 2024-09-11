@@ -1,10 +1,10 @@
 #define variable and accept user input
-income = int(input("Enter your monthly income:"))
-expenses = int(input("Enter your total monthly expenses:"))
+monthly_income = int(input("Enter your monthly income:"))
+monthly_expenses = int(input("Enter your total monthly expenses:"))
 
 
 #calculate monthly savings
-monthly_Savings = income - expenses
+monthly_Savings = monthly_income - monthly_expenses
 
 #calculate annual savings
 projected_Savings = monthly_Savings * 12 + (monthly_Savings * 12 * 0.05)
