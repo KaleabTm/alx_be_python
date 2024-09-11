@@ -1,8 +1,9 @@
-#Define Variables
-length=10
-width=5
+# Define variables
+length = 10
+width = 5
 
-#Calculate Area
+# Calculate the area
 area = length * width
 
-print(f"The area of the rectangle is: {area}" )
+# Print the result
+print(f"The area of the rectangle is: {area}")
