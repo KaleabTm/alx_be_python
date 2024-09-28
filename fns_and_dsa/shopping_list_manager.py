@@ -12,18 +12,23 @@ def main():
     
     while True:
         display_menu()
-        choice = input("Enter your choice (1-4): ")
+        
+        # Loop to ensure valid input for the menu choice
+        while True:
+            choice = input("Enter your choice (1-4): ")
+            
+            try:
+                choice = int(choice)  # Attempt to convert input to an integer
+                if 1 <= choice <= 4:  # Check if choice is valid
+                    break  # Exit the loop if the choice is valid
+                else:
+                    print("Invalid choice. Please enter a number between 1 and 4.")
+            except ValueError:
+                print("Invalid input. Please enter a number between 1 and 4.")
 
-        # Validate that choice is a number
-        if not choice.isdigit() or not (1 <= int(choice) <= 4):
-            print("Invalid choice. Please enter a number between 1 and 4.")
-            continue
-        
-        choice = int(choice)  # Convert choice to an integer
-        
         if choice == 1:
             # Prompt for and add an item
-            item = input("Enter the item you want to add: ")
+            item = input("Enter the item to add: ")  # Updated prompt
             shopping_list.append(item)
             print(f"'{item}' has been added to the shopping list.")
         elif choice == 2:
